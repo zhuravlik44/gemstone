@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Идентификация драгоценных вставок</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-stone-900 text-stone-100">
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-40 bg-stone-900/95 backdrop-blur border-b border-yellow-700/20">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold" style="font-family: 'Times New Roman', Times, serif; color: #C5A059;">
+                Идентификация драгоценных вставок
+            </h1>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section min-h-screen flex items-center justify-center border-b border-yellow-700/20">
+        <div class="text-center px-6 animate-fade-in">
+            <h2 class="text-6xl font-bold mb-4" style="font-family: 'Times New Roman', Times, serif; color: #C5A059;">
+                Драгоценные камни
+            </h2>
+            <p class="text-lg text-stone-300 max-w-2xl mx-auto leading-relaxed">
+                Изучите строение и методы аутентификации самых изысканных драгоценных камней мира.
+                Каждый камень рассказывает историю элегантности и подлинности.
+            </p>
+            <div class="mt-12 flex gap-6 justify-center">
+                <button id="explore-btn" class="px-8 py-3 border border-yellow-700 text-yellow-700 hover:bg-yellow-700/10 transition-all duration-300">
+                    Исследовать коллекцию
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gemstones Collection -->
+    <section class="collection-section py-24 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-6" style="font-family: 'Times New Roman', Times, serif; color: #C5A059;">
+                Коллекция
+            </h2>
+            <p class="text-center text-stone-400 mb-16 max-w-2xl mx-auto">
+                Откройте для себя отличительные характеристики каждого драгоценного камня
+            </p>
+            
+            <!-- Gemstones Grid -->
+            <div id="gemstones-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Cards будут сгенерированы JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Data Matrix Section -->
+    <section class="data-matrix-section py-24 px-6 border-t border-yellow-700/20 bg-stone-950">
+        <div class="max-w-7xl mx-auto">
+            <!-- Header -->
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-6" style="font-family: 'Times New Roman', Times, serif; color: #C5A059;">
+                    Маркировка Data Matrix
+                </h2>
+                <p class="text-stone-300 max-w-3xl mx-auto leading-relaxed">
+                    Цифровой паспорт вашего украшения. Компактный QR-код, который защищает от подделок и гарантирует подлинность каждого изделия.
+                </p>
+            </div>
+
+            <!-- Info Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                <!-- Card 1: What is it -->
+                <div class="bg-stone-900/50 border border-yellow-700/20 rounded-lg p-8 hover:border-yellow-700/50 transition-colors">
+                    <div class="text-4xl mb-4" style="color: #C5A059;">📱</div>
+                    <h3 class="text-xl font-bold mb-4" style="color: #C5A059;">Что это?</h3>
+                    <p class="text-stone-400 text-sm leading-relaxed">
+                        Data Matrix — это компактный QR-код, который служит цифровым паспортом ювелирного изделия. УИН (Уникальный Идентификационный Номер) связан с государственной базой данных.
+                    </p>
+                </div>
+
+                <!-- Card 2: Why it matters -->
+                <div class="bg-stone-900/50 border border-yellow-700/20 rounded-lg p-8 hover:border-yellow-700/50 transition-colors">
+                    <div class="text-4xl mb-4" style="color: #C5A059;">🛡️</div>
+                    <h3 class="text-xl font-bold mb-4" style="color: #C5A059;">Почему это важно?</h3>
+                    <p class="text-stone-400 text-sm leading-relaxed">
+                        В отличие от бумажной бирки, которую легко подделать, цифровой код напрямую связан с ГИИС ДМДК. Если кода нет в системе — изделие в незаконном обороте.
+                    </p>
+                </div>
+
+                <!-- Card 3: How to verify -->
+                <div class="bg-stone-900/50 border border-yellow-700/20 rounded-lg p-8 hover:border-yellow-700/50 transition-colors">
+                    <div class="text-4xl mb-4" style="color: #C5A059;">✓</div>
+                    <h3 class="text-xl font-bold mb-4" style="color: #C5A059;">Как проверить?</h3>
+                    <p class="text-stone-400 text-sm leading-relaxed">
+                        Найти код на бирке, отсканировать через приложение, сверить данные с изделием. Вес, пробу, камни должны совпадать на 100%.
+                    </p>
+                </div>
+            </div>
+
+            <!-- 3 Steps -->
+            <div class="bg-stone-900/30 border border-yellow-700/20 rounded-lg p-12 mb-16">
+                <h3 class="text-2xl font-bold mb-12 text-center" style="color: #C5A059;">
+                    3 шага к покупке без риска
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="text-center">
+                        <div class="inline-flex items-center justify-center w-16 h-16 rounded-full border-2 border-yellow-700/50 mb-6" style="color: #C5A059;">
+                            <span class="text-2xl font-bold">1</span>
+                        </div>
+                        <h4 class="text-lg font-semibold mb-3" style="color: #C5A059;">Находим код</h4>
+                        <p class="text-stone-400 text-sm">
+                            Он всегда есть на бирке, а с 2024 года наносится лазером и на само изделие (рядом с пробой).
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <div class="inline-flex items-center justify-center w-16 h-16 rounded-full border-2 border-yellow-700/50 mb-6" style="color: #C5A059;">
+                            <span class="text-2xl font-bold">2</span>
+                        </div>
+                        <h4 class="text-lg font-semibold mb-3" style="color: #C5A059;">Сканируем</h4>
+                        <p class="text-stone-400 text-sm">
+                            Через камеру смартфона в официальном приложении или через форму на нашем сайте.
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <div class="inline-flex items-center justify-center w-16 h-16 rounded-full border-2 border-yellow-700/50 mb-6" style="color: #C5A059;">
+                            <span class="text-2xl font-bold">3</span>
+                        </div>
+                        <h4 class="text-lg font-semibold mb-3" style="color: #C5A059;">Сверяем факты</h4>
+                        <p class="text-stone-400 text-sm">
+                            Данные в телефоне должны на 100% совпадать с тем, что вы держите в руках.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Authenticity Signs -->
+            <div class="bg-stone-900/30 border border-yellow-700/20 rounded-lg p-12 mb-16">
+                <h3 class="text-2xl font-bold mb-8" style="color: #C5A059;">
+                    Признаки того, что перед вами оригинал
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="pl-6 border-l-2 border-yellow-700/50">
+                        <h4 class="font-semibold mb-2" style="color: #C5A059;">Совпадение веса</h4>
+                        <p class="text-stone-400 text-sm">
+                            В системе указан вес до сотых грамма. Если на бирке одно, а в базе другое — откажитесь от покупки.
+                        </p>
+                    </div>
+                    <div class="pl-6 border-l-2 border-yellow-700/50">
+                        <h4 class="font-semibold mb-2" style="color: #C5A059;">Проба и металл</h4>
+                        <p class="text-stone-400 text-sm">
+                            Вы точно видите, золото это или позолоченное серебро. Все данные фиксируются в базе.
+                        </p>
+                    </div>
+                    <div class="pl-6 border-l-2 border-yellow-700/50">
+                        <h4 class="font-semibold mb-2" style="color: #C5A059;">Характеристики вставок</h4>
+                        <p class="text-stone-400 text-sm">
+                            Описание камней (каратность, чистота, огранка) должно соответствовать системе. Подменить натуральный камень теперь невозможно.
+                        </p>
+                    </div>
+                    <div class="pl-6 border-l-2 border-yellow-700/50">
+                        <h4 class="font-semibold mb-2" style="color: #C5A059;">Статус изделия</h4>
+                        <p class="text-stone-400 text-sm">
+                            Изделие должно иметь статус «В обороте». Если статус «Продано» или «Изъято» — дубликат или краденая вещь.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Benefits -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gradient-to-br from-yellow-700/10 to-transparent border border-yellow-700/30 rounded-lg p-8">
+                    <div class="text-3xl mb-4" style="color: #C5A059;">🔐</div>
+                    <h4 class="font-bold mb-3" style="color: #C5A059;">Нельзя скопировать</h4>
+                    <p class="text-stone-400 text-sm">
+                        Код уникален для каждой сережки или кольца. Даже если мошенник распечатает копию, система не даст провести двойную продажу на кассе.
+                    </p>
+                </div>
+                <div class="bg-gradient-to-br from-yellow-700/10 to-transparent border border-yellow-700/30 rounded-lg p-8">
+                    <div class="text-3xl mb-4" style="color: #C5A059;">🗺️</div>
+                    <h4 class="font-bold mb-3" style="color: #C5A059;">Прозрачный путь</h4>
+                    <p class="text-stone-400 text-sm">
+                        Вы видите всю цепочку: от завода-изготовителя до прилавка магазина. Полная отслеживаемость происхождения.
+                    </p>
+                </div>
+                <div class="bg-gradient-to-br from-yellow-700/10 to-transparent border border-yellow-700/30 rounded-lg p-8">
+                    <div class="text-3xl mb-4" style="color: #C5A059;">💎</div>
+                    <h4 class="font-bold mb-3" style="color: #C5A059;">Защита от подделок</h4>
+                    <p class="text-stone-400 text-sm">
+                        Все характеристики бриллиантов и камней фиксируются в базе при производстве. Защита от подмены на фианит.
+                    </p>
+                </div>
+            </div>
+
+            <!-- FAQ -->
+            <div class="mt-16 bg-stone-900/30 border border-yellow-700/20 rounded-lg p-12">
+                <h3 class="text-2xl font-bold mb-8" style="color: #C5A059;">
+                    Часто задаваемые вопросы
+                </h3>
+                <div class="space-y-8">
+                    <div>
+                        <h4 class="font-semibold mb-3" style="color: #C5A059;">Что если код на бирке затёр и не сканируется?</h4>
+                        <p class="text-stone-400 text-sm">
+                            Это нарушение правил торговли. По закону продавец обязан обеспечить считывание кода. Если Data Matrix повреждён, подлинность изделия нельзя считать подтверждённой, даже если само украшение выглядит качественным.
+                        </p>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold mb-3" style="color: #C5A059;">Можно ли верить коду, напечатанному просто на принтере?</h4>
+                        <p class="text-stone-400 text-sm">
+                            Код — это только ключ. Главное не то, где он напечатан, а какая информация подтягивается из государственной системы при сканировании. Всегда проверяйте данные в реестре, а не просто картинку на бирке.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="modal" class="fixed inset-0 bg-black/80 hidden z-50 flex items-center justify-center overflow-y-auto modal-overlay">
+        <div class="modal-content bg-stone-900 border border-yellow-700/30 m-4 w-full max-w-3xl rounded-lg relative animate-modal-open">
+            <!-- Close Button -->
+            <button id="close-modal" class="absolute top-6 right-6 text-stone-400 hover:text-yellow-700 transition-colors z-10">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+
+            <div class="p-12">
+                <!-- Modal Header -->
+                <div class="mb-12 border-b border-yellow-700/20 pb-8">
+                    <h2 id="modal-title" class="text-4xl font-bold mb-4" style="font-family: 'Times New Roman', Times, serif; color: #C5A059;"></h2>
+                    <p id="modal-description" class="text-stone-300 leading-relaxed"></p>
+                </div>
+
+                <!-- Modal Tabs -->
+                <div class="flex gap-8 border-b border-yellow-700/20 mb-8">
+                    <button class="modal-tab active pb-4 px-2 border-b-2 border-yellow-700 text-yellow-700" data-tab="anatomy">
+                        Строение камня
+                    </button>
+                    <button class="modal-tab pb-4 px-2 border-b-2 border-stone-900 text-stone-400 hover:text-stone-300" data-tab="authentication">
+                        Руководство аутентификации
+                    </button>
+                </div>
+
+                <!-- Tab Content -->
+                <div id="anatomy" class="modal-tab-content block">
+                    <h3 class="text-xl font-semibold mb-4" style="color: #C5A059;">Структура камня</h3>
+                    <p id="modal-anatomy" class="text-stone-300 leading-relaxed whitespace-pre-wrap"></p>
+                </div>
+
+                <div id="authentication" class="modal-tab-content hidden">
+                    <h3 class="text-xl font-semibold mb-4" style="color: #C5A059;">Как проверить подлинность</h3>
+                    <p id="modal-auth" class="text-stone-300 leading-relaxed whitespace-pre-wrap"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="border-t border-yellow-700/20 bg-stone-950 py-8 px-6">
+        <div class="max-w-7xl mx-auto text-center text-stone-500 text-sm">
+            <p>© 2026 Идентификация драгоценных камней. Все камни аутентифицированы с точностью.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
